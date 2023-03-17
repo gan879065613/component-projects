@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ribbon-consumer-01
+
+server:
+  port: 7202 #端口号
+
+############################################# Spring Cloud Ribbon 负载均衡配置##########################
+eureka:
+  client:
+    register-with-eureka: false #本微服务为服务消费者，不需要将自己注册到服务注册中心
+    fetch-registry: true  #本微服务为服务消费者，需要到服务注册中心搜索服务
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka  #集群版

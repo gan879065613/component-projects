@@ -1,0 +1,33 @@
+server:
+  port: 7203
+
+spring:
+  application:
+    name: openFeign-consumer-01
+
+eureka:
+  client:
+    register-with-eureka: false #是否向注册中心注册自己
+    fetchRegistry: true #是否从注册中心抓取已有的注册信息 默认true，集群必须设置为true
+    service-url:
+      #设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+      #defaultZone: http://localhost:7001/eureka #单机版
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka  #集群版
+
+# 由于 OpenFeign 集成了 Ribbon ，其服务调用以及负载均衡在底层都是依靠 Ribbon 实现的，因此 OpenFeign 超时控制也是通过 Ribbon 来实现的。
+ribbon:
+  ReadTimeout: 6000 #建立连接所用的时间，适用于网络状况正常的情况下，两端两端连接所用的时间
+  ConnectionTimeout: 6000 #建立连接后，服务器读取到可用资源的时间
+
+# OpenFeign的logging配置说明如下：
+  # com.ganjunhao.feign.ConsumerFeignClient 是开启 @FeignClient 注解的接口（即服务绑定接口）的完整类名。
+  # 也可以只配置部分路径，表示监控该路径下的所有服务绑定接口
+  # debug：表示监听该接口的日志级别。
+  #
+  #以上配置的含义就是，OpenFeign 以 debug 级别监控 com.ganjunhao.feign.ConsumerFeignClient 接口。
+  #
+  #2. 在 net.biancheng.c. config 包下创建一个名为 ConfigBean 的配置类，代码如下。
+logging:
+  level:
+    #feign 日志以什么样的级别监控该接口
+    com.ganjunhao.feign.ConsumerFeignClient: debug

@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: hystrix-consumer-02  #微服务名称，对外暴漏的微服务名称，十分重要
+
+server:
+  port: 7205
+########################################### Spring cloud 自定义服务名称和 ip 地址###############################################
+eureka:
+  client: #将客户端注册到 eureka 服务列表内
+    service-url:
+      #defaultZone: http://eureka7001:7001/eureka  #这个地址是 7001注册中心在 application.yml 中暴露出来额注册地址 （单机版）
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/  #将服务注册到 Eureka 集群
+  instance:
+    instance-id: shystrix-consumer-7205 #自定义服务名称信息
+    prefer-ip-address: true  #显示访问路径的 ip 地址
+
+
+# 开启客户端的 Hystrix 功能
+feign:
+  hystrix:
+    enabled: true #开启客户端 hystrix
+######################### Ribbon 客户端超时控制 ###################################
+ribbon:
+  ReadTimeout: 6000 #建立连接所用的时间，适用于网络状况正常的情况下，两端两端连接所用的时间
+  ConnectionTimeout: 6000 #建立连接后，服务器读取到可用资源的时间
+######################配置请求超时时间##########################
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+    ####################配置具体方法超时时间 为 3 秒########################
+    DeptHystrixService#deptInfo_Timeout(Integer):
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
