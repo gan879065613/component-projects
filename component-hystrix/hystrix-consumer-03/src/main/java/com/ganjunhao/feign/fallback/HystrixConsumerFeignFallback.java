@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @author ganjunhao
  * @date 2023/3/16 11:20
  */
-@Component
+//@Component
 public class HystrixConsumerFeignFallback implements HystrixConsumerFeignClient {
 
     public R<Void> test(){

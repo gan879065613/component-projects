@@ -1,7 +1,7 @@
 package com.ganjunhao.controller;
 
 import com.ganjunhao.constant.R;
-import com.ganjunhao.feign.HystrixConsumerFeignClient;
+import com.ganjunhao.feign.HystrixConsumerFeignClientV2;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +19,7 @@ import javax.annotation.Resource;
 public class HystrixConsumerServiceController {
 
     @Resource
-    private HystrixConsumerFeignClient hystrixConsumerFeignClient;
+    private HystrixConsumerFeignClientV2 hystrixConsumerFeignClientV2;
 
     /**
      * 测试调用
@@ -27,12 +27,7 @@ public class HystrixConsumerServiceController {
      */
     @GetMapping("/test")
     public R<Void> test() {
-        return hystrixConsumerFeignClient.test();
+        return hystrixConsumerFeignClientV2.test();
     }
 
-    // backMethod方法的 专用 fallback 方法
-    public R<Void> backMethod() {
-        log.info("backMethod出错，服务已被降级！");
-        return R.fail("C语言中文网提醒您：服务端系统繁忙，请稍后再试！（客户端 deptInfo_Timeout 专属的回退方法触发）");
-    }
 }
