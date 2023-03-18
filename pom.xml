@@ -18,6 +18,7 @@
         <module>component-hystrix</module>
         <module>component-gateway</module>
         <module>component-config</module>
+        <module>component-alibaba</module>
     </modules>
     <packaging>pom</packaging>
 
