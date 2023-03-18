@@ -16,6 +16,7 @@
         <module>component-ribbon</module>
         <module>component-openFeign</module>
         <module>component-hystrix</module>
+        <module>component-gateway</module>
     </modules>
     <packaging>pom</packaging>
 
