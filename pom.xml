@@ -17,6 +17,7 @@
         <module>component-openFeign</module>
         <module>component-hystrix</module>
         <module>component-gateway</module>
+        <module>component-config</module>
     </modules>
     <packaging>pom</packaging>
 

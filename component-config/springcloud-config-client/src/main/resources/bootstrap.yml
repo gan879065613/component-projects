@@ -1,0 +1,26 @@
+#bootstrap.yml 是系统级别的，加载优先级高于 bootstrap.yml ，负责从外部加载配置并解析
+server:
+  port: 7207 #端口号
+spring:
+  application:
+    name: spring-cloud-config-client #服务名
+  cloud:
+    config:
+      label: master #分支名称
+      name: config #配置文件名称，config-dev.yml 中的 config
+      profile: dev  #环境名  config-dev.yml 中的 dev
+      #这里不要忘记添加 http:// 否则无法读取
+      uri: http://localhost:3344 #Spring Cloud Config 服务端（配置中心）地址
+
+eureka:
+  client: #将客户端注册到 eureka 服务列表内
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/ #将服务注册到 Eureka 集群
+
+
+# Spring Boot 2.50对 actuator 监控屏蔽了大多数的节点，只暴露了 health 节点，本段配置（*）就是为了开启所有的节点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"   # * 在yaml 文件属于关键字，所以需要加引号
