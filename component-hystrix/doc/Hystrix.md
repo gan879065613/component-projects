@@ -251,10 +251,10 @@ public class DeptServiceImpl implements DeptService {
 - 参数 execution.isolation.thread.timeoutInMilliseconds 用于设置自身调用超时时间的峰值，峰值内可以正常运行，否则执行降级方法
 
 
-\5. 在 net.biancheng.c.controller 包下创建一个名为 DeptController 的 Controller 类，代码如下。
+\5. 在 net.biancheng.c.com.ganjunhao.controller 包下创建一个名为 DeptController 的 Controller 类，代码如下。
 
 ```java
-package net.biancheng.c.controller;
+package net.biancheng.c.com.ganjunhao.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import net.biancheng.c.service.DeptService;
@@ -374,10 +374,10 @@ public interface DeptHystrixService {
 ```
 
 
-\4. 在 net.biancheng.c.controller 包下创建一个名为 HystrixController_Consumer 的 Controller ，代码如下。
+\4. 在 net.biancheng.c.com.ganjunhao.controller 包下创建一个名为 HystrixController_Consumer 的 Controller ，代码如下。
 
 ```java
-package net.biancheng.c.controller;
+package net.biancheng.c.com.ganjunhao.controller;
 
 import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;;

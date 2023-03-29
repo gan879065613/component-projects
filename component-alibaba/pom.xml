@@ -11,6 +11,9 @@
 
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
+    <modules>
+        <module>alibaba-nacos</module>
+    </modules>
 
     <groupId>com.ganjunhao</groupId>
     <artifactId>component-alibaba</artifactId>
@@ -20,10 +23,4 @@
     <url>http://maven.apache.org/</url>
     <inceptionYear>2001</inceptionYear>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-    </dependencies>
 </project>

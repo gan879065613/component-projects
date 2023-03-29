@@ -1,0 +1,10 @@
+server:
+  port: 8200 #端口号
+spring:
+  application:
+    name: nacos-provider-01 #服务名
+  #Nacos Server 的地址
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848

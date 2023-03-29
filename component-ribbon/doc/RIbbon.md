@@ -212,10 +212,10 @@ public class ConfigBean {
 }
 ```
 
-\4. 在 net.biancheng.c.controller 包下，创建一个名为 DeptController_Consumer 的 Controller，该 Controller 中定义的请求用于调用服务端提供的服务，代码如下。
+\4. 在 net.biancheng.c.com.ganjunhao.controller 包下，创建一个名为 DeptController_Consumer 的 Controller，该 Controller 中定义的请求用于调用服务端提供的服务，代码如下。
 
 ```java
-package net.biancheng.c.controller;
+package net.biancheng.c.com.ganjunhao.controller;
 
 import net.biancheng.c.entity.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
