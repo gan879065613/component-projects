@@ -19,6 +19,7 @@
         <module>component-gateway</module>
         <module>component-config</module>
         <module>component-alibaba</module>
+        <module>component-distransaction</module>
     </modules>
     <packaging>pom</packaging>
 
