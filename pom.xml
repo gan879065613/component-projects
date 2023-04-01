@@ -20,6 +20,7 @@
         <module>component-config</module>
         <module>component-alibaba</module>
         <module>component-distransaction</module>
+        <module>component-weixin</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -45,6 +46,7 @@
         <fastjson.version>1.2.83</fastjson.version>
         <zxing.version>3.5.1</zxing.version>
         <commons-lang3.version>3.9</commons-lang3.version>
+        <weixin.java.version>4.4.0</weixin.java.version>
     </properties>
 
     <!-- 1、只是声明依赖，并不实际引入，子项目按需声明使用的依赖 -->
@@ -135,6 +137,37 @@
                 <groupId>com.google.zxing</groupId>
                 <artifactId>core</artifactId>
                 <version>${zxing.version}</version>
+            </dependency>
+
+            <!-- 微信小程序 -->
+            <dependency>
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>weixin-java-miniapp</artifactId>
+                <version>${weixin.java.version}</version>
+            </dependency>
+            <!-- 微信支付 -->
+            <dependency>
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>weixin-java-pay</artifactId>
+                <version>${weixin.java.version}</version>
+            </dependency>
+            <dependency>
+                <!--微信开放平台-->
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>weixin-java-open</artifactId>
+                <version>${weixin.java.version}</version>
+            </dependency>
+            <!--公众号（包括订阅号和服务号）-->
+            <dependency>
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>weixin-java-mp</artifactId>
+                <version>${weixin.java.version}</version>
+            </dependency>
+            <!--企业号/企业微信-->
+            <dependency>
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>weixin-java-cp</artifactId>
+                <version>${weixin.java.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

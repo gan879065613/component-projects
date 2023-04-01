@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>component-weixin</artifactId>
+        <groupId>com.ganjunhao</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ganjunhao</groupId>
+    <artifactId>weixin-login</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>weixin-login</name>
+    <url>http://maven.apache.org/</url>
+    <inceptionYear>2001</inceptionYear>
+
+    <dependencies>
+        <dependency>
+            <groupId>me.zhyd.oauth</groupId>
+            <artifactId>JustAuth</artifactId>
+            <version>1.16.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!--
+            @since 1.14.0 抽取HTTP，具体实现交给开发者，解耦 hutool-http，开发者可以视自己项目的依赖决定使用何种HTTP方式。
+            “
+              1. 默认会按照下面的优先级自行寻找底层实现，java 11 HttpClient -> OkHttp3 -> apache HttpClient -> hutool-http
+              2. 也可以自行实现 com.xkcoding.http.support.Http 接口，通过 HttpUtil.setHttp(new MyHttpImpl()) 设置进来
+            ”
+            详情请参考：https://github.com/xkcoding/simple-http
+
+            如以下配置，pom种加入了三种HTTP工具包，simple-http默认会从优先级最高的选项取，所以本项目最终使用的HTTP实现方式为“OkHttp3”
+         -->
+    </dependencies>
+
+</project>
