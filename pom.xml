@@ -21,6 +21,8 @@
         <module>component-alibaba</module>
         <module>component-distransaction</module>
         <module>component-weixin</module>
+        <module>component-auth</module>
+        <module>common-swagger</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -47,6 +49,7 @@
         <zxing.version>3.5.1</zxing.version>
         <commons-lang3.version>3.9</commons-lang3.version>
         <weixin.java.version>4.4.0</weixin.java.version>
+        <knife4j-spring-boot-starter.version>3.0.3</knife4j-spring-boot-starter.version>
     </properties>
 
     <!-- 1、只是声明依赖，并不实际引入，子项目按需声明使用的依赖 -->
@@ -168,6 +171,14 @@
                 <groupId>com.github.binarywang</groupId>
                 <artifactId>weixin-java-cp</artifactId>
                 <version>${weixin.java.version}</version>
+            </dependency>
+            <!-- knife4j是为Java MVC框架集成Swagger生成Api文档的增强解决方案,前身是swagger-bootstrap-ui,
+                取名knife4j是希望它能像一把匕首一样小巧,轻量,并且功能强悍!其底层是对Springfox的封装，
+                使用方式也和Springfox一致，只是对接口文档UI进行了优化。-->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j-spring-boot-starter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

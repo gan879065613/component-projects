@@ -1,0 +1,10 @@
+server:
+  port: 30001 #端口号
+
+ganjunhao:
+  swagger:
+    contact:
+      name: chen.ma
+    description: Cart Service
+    title: Cart Service
+    version: 1.0.0
