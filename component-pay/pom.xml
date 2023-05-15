@@ -1,62 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <parent>
-    <artifactId>component-projects</artifactId>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>component-projects</artifactId>
+        <groupId>com.ganjunhao</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>pay-all</module>
+        <module>pay-weixin</module>
+        <module>pay-design-mode</module>
+    </modules>
+    <modelVersion>4.0.0</modelVersion>
+
     <groupId>com.ganjunhao</groupId>
+    <artifactId>component-pay</artifactId>
     <version>1.0-SNAPSHOT</version>
-  </parent>
 
-  <packaging>pom</packaging>
-  <modules>
-    <module>pay-all</module>
-    <module>pay-weixin</module>
-  </modules>
-  <modelVersion>4.0.0</modelVersion>
+    <name>COMPONENT::PAY</name>
+    <url>http://maven.apache.org/</url>
+    <inceptionYear>2001</inceptionYear>
 
-  <groupId>com.ganjunhao</groupId>
-  <artifactId>component-pay</artifactId>
-  <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>com.ganjunhao</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
-  <name>COMPONENT::PAY</name>
-  <url>http://maven.apache.org/</url>
-  <inceptionYear>2001</inceptionYear>
+        <!-- 2023-03-03 最新版本2.9.6 -->
+        <dependency>
+            <groupId>com.github.javen205</groupId>
+            <artifactId>IJPay-All</artifactId>
+            <version>2.9.6</version>
+        </dependency>
 
-  <dependencies>
-    <dependency>
-      <groupId>com.ganjunhao</groupId>
-      <artifactId>common</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
+        <!-- 2023-03-03 -->
+        <dependency>
+            <groupId>com.jfinal</groupId>
+            <artifactId>enjoy</artifactId>
+            <version>4.3</version>
+        </dependency>
 
-    <!-- 2023-03-03 最新版本2.9.6 -->
-    <dependency>
-      <groupId>com.github.javen205</groupId>
-      <artifactId>IJPay-All</artifactId>
-      <version>2.9.6</version>
-    </dependency>
+        <!-- 2023-03-03 -->
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>4.35.37.ALL</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>fastjson</artifactId>
+                    <groupId>com.alibaba</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
 
-    <!-- 2023-03-03 -->
-    <dependency>
-      <groupId>com.jfinal</groupId>
-      <artifactId>enjoy</artifactId>
-      <version>4.3</version>
-    </dependency>
-
-    <!-- 2023-03-03 -->
-    <dependency>
-      <groupId>com.alipay.sdk</groupId>
-      <artifactId>alipay-sdk-java</artifactId>
-      <version>4.35.37.ALL</version>
-      <exclusions>
-        <exclusion>
-          <artifactId>fastjson</artifactId>
-          <groupId>com.alibaba</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-
-  </dependencies>
+    </dependencies>
 
 </project>

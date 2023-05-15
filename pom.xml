@@ -25,6 +25,7 @@
         <module>common-swagger</module>
         <module>component-generator</module>
         <module>component-game</module>
+        <module>cmmon-framework-all</module>
     </modules>
     <packaging>pom</packaging>
 
