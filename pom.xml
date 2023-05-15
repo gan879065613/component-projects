@@ -26,6 +26,7 @@
         <module>component-generator</module>
         <module>component-game</module>
         <module>cmmon-framework-all</module>
+        <module>component-speech</module>
     </modules>
     <packaging>pom</packaging>
 
