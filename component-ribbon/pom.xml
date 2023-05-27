@@ -21,7 +21,7 @@
   <packaging>pom</packaging>
   <modelVersion>4.0.0</modelVersion>
 
-  <name>COMPONENT::RIBBON</name>
+  <name>component-ribbon</name>
   <url>http://maven.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
 
