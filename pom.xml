@@ -27,6 +27,7 @@
         <module>component-game</module>
         <module>cmmon-framework-all</module>
         <module>component-speech</module>
+        <module>component-rocketmq</module>
     </modules>
     <packaging>pom</packaging>
 
