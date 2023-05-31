@@ -1,0 +1,4 @@
+rocketmq:
+  producer:
+    group: sanyouProducer
+  name-server: 172.28.75.72:9876
