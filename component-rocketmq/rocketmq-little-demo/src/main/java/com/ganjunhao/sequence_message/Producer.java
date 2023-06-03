@@ -1,5 +1,6 @@
 package com.ganjunhao.sequence_message;
 
+import com.ganjunhao.common.NameSrvAddress;
 import org.apache.rocketmq.client.exception.MQBrokerException;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
@@ -21,7 +22,7 @@ public class Producer {
         try {
             DefaultMQProducer producer = new DefaultMQProducer("sequence_message_producer_group");
             // 设置NameServer地址
-            producer.setNamesrvAddr("172.25.226.199:9876");
+            producer.setNamesrvAddr(NameSrvAddress.NAME_SRV_ADDR);
             producer.start();
             String[] tags = new String[]{"sequence_message_tagA", "sequence_message_tagB", "sequence_message_tagC",
                     "sequence_message_tagD", "sequence_message_tagE"};

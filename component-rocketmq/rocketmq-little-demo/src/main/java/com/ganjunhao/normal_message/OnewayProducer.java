@@ -1,5 +1,6 @@
 package com.ganjunhao.normal_message;
 
+import com.ganjunhao.common.NameSrvAddress;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.common.message.Message;
 import org.apache.rocketmq.remoting.common.RemotingHelper;
@@ -13,7 +14,7 @@ public class OnewayProducer {
         // 初始化一个producer并设置Producer group name
         DefaultMQProducer producer = new DefaultMQProducer("normal_oneway_message_producer_group");
         // 设置NameServer地址
-        producer.setNamesrvAddr("172.25.226.199:9876");
+        producer.setNamesrvAddr(NameSrvAddress.NAME_SRV_ADDR);
         // 启动producer
         producer.start();
         for (int i = 0; i < 100; i++) {

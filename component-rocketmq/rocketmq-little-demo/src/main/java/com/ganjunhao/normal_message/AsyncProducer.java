@@ -1,5 +1,6 @@
 package com.ganjunhao.normal_message;
 
+import com.ganjunhao.common.NameSrvAddress;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendCallback;
 import org.apache.rocketmq.client.producer.SendResult;
@@ -18,7 +19,7 @@ public class AsyncProducer {
         // 初始化一个producer并设置Producer group name
         DefaultMQProducer producer = new DefaultMQProducer("normal_async_message_producer_group");
         // 设置NameServer地址
-        producer.setNamesrvAddr("172.21.244.73:9876");
+        producer.setNamesrvAddr(NameSrvAddress.NAME_SRV_ADDR);
         // 启动producer
         producer.start();
         producer.setRetryTimesWhenSendAsyncFailed(0);

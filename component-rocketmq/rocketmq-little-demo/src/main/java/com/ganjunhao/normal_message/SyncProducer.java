@@ -1,5 +1,6 @@
 package com.ganjunhao.normal_message;
 
+import com.ganjunhao.common.NameSrvAddress;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.common.message.Message;
@@ -14,7 +15,7 @@ public class SyncProducer {
         // 初始化一个producer并设置Producer group name
         DefaultMQProducer defaultMQProducer = new DefaultMQProducer("normal_sync_message_producer_group");
         // 设置NameServer地址
-        defaultMQProducer.setNamesrvAddr("172.25.226.199:9876");
+        defaultMQProducer.setNamesrvAddr(NameSrvAddress.NAME_SRV_ADDR);
         // 启动producer
         defaultMQProducer.start();
         for (int i = 0; i < 10; i++) {
