@@ -12,16 +12,17 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Date;
 
 public class AsrMain {
 
     private final boolean METHOD_RAW = false; // 默认以json方式上传音频文件
 
-    //  填写网页上申请的appkey 如 $apiKey="g8eBUMSokVB1BHGmgxxxxxx"
-    private final String APP_KEY = "24zqDbW48TZtfNFHWEUgGus6";
+    //  填写网页上申请的appkey 如 $apiKey="24zqDbW48TZtfNFHWEUgGus6"（ganjunhao个人）
+    private final String APP_KEY = "TWwTWAQihi9GBOQYGacyHql5";
 
-    // 填写网页上申请的APP SECRET 如 $SECRET_KEY="94dc99566550d87f8fa8ece112xxxxx"
-    private final String SECRET_KEY = "XVP2m5zqFhtHCmPozuViSKOnxRdWwsk2";
+    // 填写网页上申请的APP SECRET 如 $SECRET_KEY="XVP2m5zqFhtHCmPozuViSKOnxRdWwsk2"（ganjunhao个人）
+    private final String SECRET_KEY = "qARmvUVzPV3IrSMrYS2nTuGBnGbVG4pH";
 
     // 需要识别的文件
     private final String FILENAME = "E:\\develop\\component_projects\\component-projects\\component-speech\\baidu-speech-recognition\\src\\main\\resources\\16k.pcm";
@@ -45,9 +46,10 @@ public class AsrMain {
 
     //  普通版 参数
     {
-        URL = "https://vop.baidu.com/server_api"; // 可以改为https
+        //URL = "https://vop.baidu.com/server_api"; // 可以改为https
+        URL = "https://vop.baidu.com/pro_api"; // 可以改为https
         //  1537 表示识别普通话，使用输入法模型。 其它语种参见文档
-        DEV_PID = 1537;
+        DEV_PID = 80001;
         SCOPE = "audio_voice_assistant_get";
     }
 
@@ -73,6 +75,7 @@ public class AsrMain {
     */
 
     public static void main(String[] args) throws IOException, DemoException {
+        System.out.println("开始时间："+ new Date());
         AsrMain demo = new AsrMain();
         // 填写下面信息
         String result = demo.run();
@@ -80,11 +83,12 @@ public class AsrMain {
         System.out.println(result);
 
         // 如果显示乱码，请打开result.txt查看
-        File file = new File("result.txt");
+        File file = new File("result.pcm");
         FileWriter fo = new FileWriter(file);
         fo.write(result);
         fo.close();
         System.out.println("Result also wrote into " + file.getAbsolutePath());
+        System.out.println("结束时间："+ new Date());
     }
 
 
