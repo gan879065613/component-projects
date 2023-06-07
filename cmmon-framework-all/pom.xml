@@ -21,6 +21,7 @@
 
     <modules>
         <module>designpattern-spring-boot-starter</module>
+        <module>mylog-spring-boot-starter</module>
     </modules>
 
     <dependencies>
