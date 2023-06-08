@@ -29,6 +29,7 @@
         <module>component-speech</module>
         <module>component-rocketmq</module>
         <module>component-algorithm</module>
+        <module>component-canal</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -59,6 +60,7 @@
         <weixin.java.version>4.4.0</weixin.java.version>
         <knife4j-spring-boot-starter.version>3.0.3</knife4j-spring-boot-starter.version>
         <spring-doc.version>1.6.13</spring-doc.version>
+        <canal.version>1.1.6</canal.version>
     </properties>
 
     <!-- 1、只是声明依赖，并不实际引入，子项目按需声明使用的依赖 -->
@@ -199,6 +201,17 @@
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-spring-boot-starter</artifactId>
                 <version>${knife4j-spring-boot-starter.version}</version>
+            </dependency>
+            <!--canal-->
+            <dependency>
+                <groupId>com.alibaba.otter</groupId>
+                <artifactId>canal.client</artifactId>
+                <version>${canal.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.otter</groupId>
+                <artifactId>canal.protocol</artifactId>
+                <version>${canal.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
