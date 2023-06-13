@@ -6,7 +6,10 @@
 
 package com.ganjunhao.chapter_computational_complexity;
 
-import utils.*;
+import com.ganjunhao.utils.ListNode;
+import com.ganjunhao.utils.PrintUtil;
+import com.ganjunhao.utils.TreeNode;
+
 import java.util.*;
 
 public class space_complexity {
