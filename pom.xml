@@ -30,6 +30,7 @@
         <module>component-rocketmq</module>
         <module>component-algorithm</module>
         <module>component-canal</module>
+        <module>component-shardingSphere</module>
     </modules>
     <packaging>pom</packaging>
 
