@@ -15,6 +15,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>shardingSphere-jdbc</module>
+        <module>shardingSphere-springboot</module>
     </modules>
 
     <name>component-shardingSphere</name>
