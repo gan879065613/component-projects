@@ -31,6 +31,7 @@
         <module>component-algorithm</module>
         <module>component-canal</module>
         <module>component-shardingSphere</module>
+        <module>component-print</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -62,6 +63,8 @@
         <knife4j-spring-boot-starter.version>3.0.3</knife4j-spring-boot-starter.version>
         <spring-doc.version>1.6.13</spring-doc.version>
         <canal.version>1.1.6</canal.version>
+        <fastjson2.version>2.0.7</fastjson2.version>
+        <redisson-spring-boot-starter.version>3.17.3</redisson-spring-boot-starter.version>
     </properties>
 
     <!-- 1、只是声明依赖，并不实际引入，子项目按需声明使用的依赖 -->
@@ -213,6 +216,18 @@
                 <groupId>com.alibaba.otter</groupId>
                 <artifactId>canal.protocol</artifactId>
                 <version>${canal.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson-spring-boot-starter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
