@@ -24,7 +24,7 @@
         <module>eureka-consumer-01</module>
     </modules>
 
-    <name>COMPONENT::EUREKA</name>
+    <name>component-eureka</name>
     <url>http://maven.apache.org/</url>
     <inceptionYear>2001</inceptionYear>
 

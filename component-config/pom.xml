@@ -21,7 +21,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
 
-    <name>COMPONENT::CONFIG</name>
+    <name>component-config</name>
     <url>http://maven.apache.org/</url>
     <inceptionYear>2001</inceptionYear>
 

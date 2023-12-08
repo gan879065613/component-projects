@@ -16,7 +16,7 @@
   <packaging>jar</packaging>
   <modelVersion>4.0.0</modelVersion>
 
-  <name>OPENFEIGN::CONSUMER::01</name>
+  <name>component-openfeign-consumer-01</name>
   <url>http://maven.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
 

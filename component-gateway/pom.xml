@@ -19,7 +19,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
 
-    <name>COMPONENT::GATEWAY</name>
+    <name>component-gateway</name>
     <url>http://maven.apache.org/</url>
     <inceptionYear>2001</inceptionYear>
 

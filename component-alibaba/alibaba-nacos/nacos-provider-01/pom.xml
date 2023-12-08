@@ -15,7 +15,7 @@
   <artifactId>nacos-provider-01</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>NACOS::PROVIDER::01</name>
+  <name>component-alibaba-nacos-provider-01</name>
   <url>http://maven.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
 

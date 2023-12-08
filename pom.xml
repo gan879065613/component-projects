@@ -25,17 +25,18 @@
         <module>common-swagger</module>
         <module>component-generator</module>
         <module>component-game</module>
-        <module>cmmon-framework-all</module>
+        <module>common-framework-all</module>
         <module>component-speech</module>
         <module>component-rocketmq</module>
         <module>component-algorithm</module>
         <module>component-canal</module>
         <module>component-shardingSphere</module>
         <module>component-print</module>
+        <module>component-velocity</module>
     </modules>
     <packaging>pom</packaging>
 
-    <name>COMPONENT::ROOT</name>
+    <name>component-root</name>
     <url>http://maven.apache.org/</url>
     <inceptionYear>2023</inceptionYear>
 

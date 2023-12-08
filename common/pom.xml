@@ -15,7 +15,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
 
-    <name>COMMON</name>
+    <name>common</name>
     <url>http://maven.apache.org/</url>
     <inceptionYear>2001</inceptionYear>
 

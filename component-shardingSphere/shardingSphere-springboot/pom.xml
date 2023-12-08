@@ -12,7 +12,7 @@
 
     <artifactId>shardingSphere-springboot</artifactId>
 
-    <name>shardingSphere-springboot</name>
+    <name>component-shardingSphere-springboot</name>
 
     <dependencies>
         <dependency>

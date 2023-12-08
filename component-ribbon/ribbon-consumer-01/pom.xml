@@ -16,7 +16,7 @@
   <artifactId>ribbon-consumer-01</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>RIBBON::CONSUMER::01</name>
+  <name>component-ribbon-consumer-01</name>
   <url>http://maven.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
 

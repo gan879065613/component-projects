@@ -15,7 +15,7 @@
   <modelVersion>4.0.0</modelVersion>
   <packaging>pom</packaging>
 
-  <name>COMPONENT::TASK</name>
+  <name>component-task</name>
   <url>http://maven.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
 

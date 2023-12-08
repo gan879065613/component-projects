@@ -13,7 +13,7 @@
     <artifactId>shardingSphere-jdbc</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>shardingSphere-jdbc</name>
+    <name>component-shardingSphere-jdbc</name>
 
     <dependencies>
         <dependency>

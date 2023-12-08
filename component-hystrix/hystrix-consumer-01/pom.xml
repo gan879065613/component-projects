@@ -16,7 +16,7 @@
   <artifactId>hystrix-consumer-01</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>HYSTRIX::CONSUMER::01</name>
+  <name>component-hystrix-consumer-01</name>
   <url>http://maven.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
   <description>服务端降级</description>
