@@ -6,8 +6,10 @@
 
 package com.ganjunhao.chapter_graph;
 
+import com.ganjunhao.utils.Vertex;
+
 import java.util.*;
-import utils.*;
+
 
 /* 基于邻接表实现的无向图类 */
 class GraphAdjList {

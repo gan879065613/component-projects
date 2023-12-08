@@ -6,8 +6,10 @@
 
 package com.ganjunhao.chapter_graph;
 
+import com.ganjunhao.utils.Vertex;
+
 import java.util.*;
-import utils.*;
+
 
 public class graph_dfs {
     /* 深度优先遍历 DFS 辅助函数 */

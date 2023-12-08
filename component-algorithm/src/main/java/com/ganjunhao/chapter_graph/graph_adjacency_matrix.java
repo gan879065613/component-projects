@@ -6,7 +6,9 @@
 
 package com.ganjunhao.chapter_graph;
 
-import utils.*;
+
+import com.ganjunhao.utils.PrintUtil;
+
 import java.util.*;
 
 /* 基于邻接矩阵实现的无向图类 */

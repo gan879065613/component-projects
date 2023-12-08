@@ -6,7 +6,9 @@
 
 package com.ganjunhao.chapter_searching;
 
-import utils.*;
+
+import com.ganjunhao.utils.ListNode;
+
 import java.util.*;
 
 public class hashing_search {

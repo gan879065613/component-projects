@@ -6,8 +6,11 @@
 
 package com.ganjunhao.chapter_tree;
 
+import com.ganjunhao.utils.PrintUtil;
+import com.ganjunhao.utils.TreeNode;
+
 import java.util.*;
-import utils.*;
+
 
 /* 二叉搜索树 */
 class BinarySearchTree {

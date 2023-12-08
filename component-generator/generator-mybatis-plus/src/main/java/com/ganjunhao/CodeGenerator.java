@@ -23,7 +23,7 @@ public class CodeGenerator {
     // TODO 生成包名
     private static final String PACKAGE_EXE = "jnpf.asso";
     // TODO 数据库地址
-    private static final String URL = "jdbc:mysql://localhost:63306/zgyf_boot_dev?useUnicode=true&characterEncoding =UTF-8&serverTimezone = Asia/Shanghai";
+    private static final String URL = "jdbc:mysql://localhost:53306/jgzx_cloud_dev?useUnicode=true&characterEncoding =UTF-8&serverTimezone = Asia/Shanghai";
     // TODO 数据库用户名
     private static final String USERNAME = "root";
     // TODO 数据库密码
@@ -95,8 +95,8 @@ public class CodeGenerator {
                 // 策略配置
                 .strategyConfig((scanner, builder) ->
                                 builder.addInclude(getTables(scanner.apply("请输入表名，多个表之间用英文逗号分隔，所有输入all")))
-                                        .addTablePrefix(TABLE_PREFIX)
-                                        .addFieldPrefix(FIELD_PREFIX)
+//                                        .addTablePrefix(TABLE_PREFIX)
+//                                        .addFieldPrefix(FIELD_PREFIX)
                                         // entity
                                         .entityBuilder()
                                         .fileOverride()

@@ -6,7 +6,9 @@
 
 package com.ganjunhao.chapter_heap;
 
-import utils.*;
+
+import com.ganjunhao.utils.PrintUtil;
+
 import java.util.*;
 
 public class heap {

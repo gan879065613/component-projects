@@ -6,7 +6,8 @@
 
 package com.ganjunhao.chapter_searching;
 
-import utils.*;
+
+import com.ganjunhao.utils.ListNode;
 
 public class linear_search {
     /* 线性查找（数组） */

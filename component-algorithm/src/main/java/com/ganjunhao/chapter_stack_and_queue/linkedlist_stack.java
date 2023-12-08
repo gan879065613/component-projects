@@ -7,7 +7,6 @@
 package com.ganjunhao.chapter_stack_and_queue;
 
 import java.util.*;
-import utils.*;
 
 /* 基于链表实现的栈 */
 class LinkedListStack {

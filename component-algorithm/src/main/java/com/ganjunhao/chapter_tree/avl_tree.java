@@ -6,7 +6,9 @@
 
 package com.ganjunhao.chapter_tree;
 
-import utils.*;
+
+import com.ganjunhao.utils.PrintUtil;
+import com.ganjunhao.utils.TreeNode;
 
 /* AVL 树 */
 class AVLTree {

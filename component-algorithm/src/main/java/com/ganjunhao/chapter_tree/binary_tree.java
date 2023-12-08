@@ -6,7 +6,8 @@
 
 package com.ganjunhao.chapter_tree;
 
-import utils.*;
+import com.ganjunhao.utils.PrintUtil;
+import com.ganjunhao.utils.TreeNode;
 
 public class binary_tree {
     public static void main(String[] args) {

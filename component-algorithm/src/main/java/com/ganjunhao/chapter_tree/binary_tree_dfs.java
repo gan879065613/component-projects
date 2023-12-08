@@ -6,7 +6,9 @@
 
 package com.ganjunhao.chapter_tree;
 
-import utils.*;
+import com.ganjunhao.utils.PrintUtil;
+import com.ganjunhao.utils.TreeNode;
+
 import java.util.*;
 
 public class binary_tree_dfs {

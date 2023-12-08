@@ -6,7 +6,9 @@
 
 package com.ganjunhao.chapter_backtracking;
 
-import utils.*;
+import com.ganjunhao.utils.PrintUtil;
+import com.ganjunhao.utils.TreeNode;
+
 import java.util.*;
 
 public class preorder_traversal_iii_compact {

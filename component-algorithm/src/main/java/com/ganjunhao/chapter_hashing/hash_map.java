@@ -6,8 +6,10 @@
 
 package com.ganjunhao.chapter_hashing;
 
+import com.ganjunhao.utils.PrintUtil;
+
 import java.util.*;
-import utils.*;
+
 
 public class hash_map {
     public static void main(String[] args) {
